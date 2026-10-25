@@ -26,11 +26,7 @@ export default function Login() {
     }
   };
 
-  const fillDemo = (u, p) => {
-    setUsername(u);
-    setPassword(p);
-  };
-
+  
   return (
     <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl p-8 border border-slate-700/30">
@@ -93,29 +89,6 @@ export default function Login() {
             <ArrowRight className="w-4 h-4" />
           </button>
         </form>
-
-        {/* Demo Fast Login Pills */}
-        <div className="mt-8 pt-6 border-t border-gray-100">
-          <p className="text-xs font-semibold text-gray-500 text-center mb-3">Quick Demo Logins (SRS Roles):</p>
-          <div className="grid grid-cols-2 gap-2.5">
-            <button
-              type="button"
-              onClick={() => fillDemo('owner', 'admin123')}
-              className="py-2 px-3 text-xs font-medium text-emerald-800 bg-emerald-50 hover:bg-emerald-100 rounded-lg border border-emerald-200 text-left transition"
-            >
-              <div className="font-bold">Store Owner</div>
-              <div className="text-[10px] text-emerald-600">owner / admin123</div>
-            </button>
-            <button
-              type="button"
-              onClick={() => fillDemo('cashier', 'admin123')}
-              className="py-2 px-3 text-xs font-medium text-sky-800 bg-sky-50 hover:bg-sky-100 rounded-lg border border-sky-200 text-left transition"
-            >
-              <div className="font-bold">Cashier</div>
-              <div className="text-[10px] text-sky-600">cashier / admin123</div>
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
